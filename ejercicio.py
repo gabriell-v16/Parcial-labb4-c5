@@ -155,6 +155,9 @@ else:
             st.write("")  
             st.write("")  
             st.write("")  
+            st.write("")  
+            st.write("")  
+            
 
             serie_temporal = df[df['Producto'] == producto].groupby(['Año', 'Mes'])['Unidades_vendidas'].sum().reset_index()
             serie_temporal['Fecha'] = pd.to_datetime(serie_temporal['Año'].astype(str) + '-' + 
